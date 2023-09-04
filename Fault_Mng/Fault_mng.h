@@ -7,7 +7,7 @@
 #define  FAULT_ID_No_fault       0XAA0012
 #define  FAULT_ID_SNA_Both_high  0XAA0003
 #define  FAULT_ID_SNV_Both_high  0XAA0013
-#define  IDEAL_STATE             0XAA00FF
+#define  SENS_IDEAL_STATE             0XAA00FF
 
 
 
