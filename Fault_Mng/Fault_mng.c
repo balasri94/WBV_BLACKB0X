@@ -19,7 +19,7 @@ void sens_fault_check()
 		case SNA_Revs_conn :	fault_count++; write_to_EEPROM(FAULT_ID_SNA_Revs_conn); warning_lamp( R_led,  Blink_7); break;
 		case SNV_Revs_conn :	fault_count++; write_to_EEPROM(FAULT_ID_SNV_Revs_conn); break;
 		case SNA_Prop_conn :	fault_count++; write_to_EEPROM(FAULT_ID_SNA_Prop_conn); warning_lamp( R_led,  Blink_1000); break;
-		case No_fault :		 break;
+		case No_fault :		write_to_EEPROM(FAULT_ID_No_fault); break;
 		case SNA_Both_high :	fault_count++; write_to_EEPROM(FAULT_ID_SNA_Both_high); warning_lamp( R_led,  Blink_20); break;
 		case SNV_Both_high :	fault_count++; write_to_EEPROM(FAULT_ID_SNV_Both_high); break;
 		default :
