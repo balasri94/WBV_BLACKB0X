@@ -1,7 +1,7 @@
 #include "Warning.h"
 
 
-void warning_lamp( uint8_t	Led,uint8_t blink_delay )
+void warning_lamp( uint8_t Led,uint8_t blink_delay )
 {
 	uint32_t loop=Led_loop_count;
 	while(loop){
