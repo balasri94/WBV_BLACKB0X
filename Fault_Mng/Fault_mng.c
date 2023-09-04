@@ -1,11 +1,12 @@
 #include"Fault_mng.h"
 #include<stdint.h>
 sens_pin_2_1_check var;
-uint8_t fault_cases;
 
+uint8_t fault_count;
 
 void sens_fault_check()
 {
+	uint8_t fault_cases;
 	sens_IP = sens_IP_read();
 	sens_OP = sens_OP_read();
 	
