@@ -1,4 +1,13 @@
- typedef struct {
+
+#define  FAULT_ID_SNA_Both_gnd  0XAA0000
+#define  FAULT_ID_SNV_Both_gnd  0XAA0010
+#define  FAULT_ID_SNA_Revs_conn 0XAA0001
+#define  FAULT_ID_SNV_Revs_conn  0XAA0011
+#define  FAULT_ID_SNA_Prop_conn  0XAA0002
+#define  FAULT_ID_SNA_Both_high  0XAA0003
+#define  FAULT_ID_SNV_Both_high  0XAA0013
+
+typedef struct {
   uint8_t pin_1:2;
   uint8_t pin_2:2;
   uint8_t data:1;
