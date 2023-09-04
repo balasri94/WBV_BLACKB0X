@@ -1,5 +1,11 @@
-void sens_fault_check();
+ typedef struct {
+  uint8_t pin_1:2;
+  uint8_t pin_2:2;
+  uint8_t data:1;
+  }sens_pin_2_1_check;
 
+
+void sens_fault_check();
 enum sensor_io_pin_stat 
 	{SNA_Both_gnd=0,
 	 SNV_Both_gnd,
