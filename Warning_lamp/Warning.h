@@ -8,6 +8,8 @@
 #define Blink_1 100;
 #define Blink_7 700;
 #define Blink_20 2000;
+#define Blink_1000 1000000;
+
 #define Led_loop_count 500000000
 
 enum led_state {OFF,ON};
