@@ -25,5 +25,9 @@ void sens_fault_check()
 		default :
 	}
 
-	
-	
+	if(fault_count>=3)
+	{
+	 write_to_EEPROM( IDEAL_STATE);
+	fault_count=0;
+	}	
+}
