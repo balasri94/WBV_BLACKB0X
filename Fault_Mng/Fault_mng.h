@@ -4,7 +4,7 @@
   uint8_t data:1;
   }sens_pin_2_1_check;
 
-
+uint8_t sens_IP_read(void);
 void sens_fault_check();
 enum sensor_io_pin_stat 
 	{SNA_Both_gnd=0,
