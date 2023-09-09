@@ -18,6 +18,4 @@ uint32_t read_from_EE(void)
 	    return EEDATA;
          else
 	    return FAULT_ID_EEPROM_READ;
-	
-    return EEDATA;
 }
