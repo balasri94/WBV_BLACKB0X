@@ -1,5 +1,5 @@
 #include "EEProm.h"
-
+uint8_t ack;
  uint32_t write_to_EE(char sens_fault_ID)
 {
     EEDATA = sens_fault_ID;
