@@ -13,8 +13,9 @@
 
 typedef struct {
   uint8_t pin_1:2;
-  uint8_t pin_2:2;
+  uint8_t pin_2:1;
   uint8_t data:1;
+  uint8_t data_res;
   }sens_pin_2_1_check;
 
 uint8_t sens_IP_read(void);
