@@ -8,8 +8,7 @@
 #define  FAULT_ID_SNA_Both_high  0XAA0003
 #define  FAULT_ID_SNV_Both_high  0XAA0013
 #define  IDEAL_STATE             0XAA00FF
-#define  FAULT_ID_EEPROM_WRITE	 0XEEAA0001
-#define  FAULT_ID_EEPROM_READ	 0XEEAA0000
+
 
 
 typedef struct {
