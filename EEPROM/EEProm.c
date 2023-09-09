@@ -9,10 +9,11 @@ bool write_to_EE(char sens_fault_ID)
     else
 	    return false;
 }
-uint16_t read_from_EE(void)
+uint32_t read_from_EE(void)
 {
 		//EEADR = address;
     uint16_t EEDATA;
 		EEDATA	= hal_i2c_eeprom_read(address);
+	
     return EEDATA;
 }
