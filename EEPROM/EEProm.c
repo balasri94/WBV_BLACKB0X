@@ -3,7 +3,7 @@
  uint32_t write_to_EE(char sens_fault_ID)
 {
     EEDATA = sens_fault_ID;
-    HAL_i2c_eeprom_write(eeprom_addr,mem_addr,sens_fault_ID);
+   // HAL_i2c_eeprom_write(eeprom_addr,mem_addr,sens_fault_ID);
     if(ack==1)
 	    return 1;
     else
